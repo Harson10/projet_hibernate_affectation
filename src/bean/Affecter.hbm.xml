@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="bean.Affecter" table="AFFECTER">
+        <composite-id>
+            <key-property name="codeemp" column="codeemp" type="int"/>
+            <key-property name="codelieu" column="codelieu" type="int"/>
+        </composite-id>
+        <property name="date" column="date" type="date"/>
+    </class>
+</hibernate-mapping>
